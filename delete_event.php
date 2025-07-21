@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
     $sql = "DELETE FROM event WHERE id = $id";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: index2.php");
+        header("Location: display_event.php");
         exit();
     } else {
         echo "Error deleting record: " . $conn->error;
