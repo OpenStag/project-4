@@ -37,6 +37,10 @@ body::before {
     margin-bottom: 50px;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     position: relative;
+    background-color:#62F055;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5px;
 }
 
 .title::after {
@@ -72,19 +76,10 @@ body::before {
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     position: relative;
-    animation: fadeInUp 0.6s ease-out;
+    /* Removed fadeInUp animation */
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* Removed fadeInUp keyframes since they're no longer needed */
 
 .card:hover {
     transform: translateY(-15px) scale(1.02);
@@ -197,6 +192,7 @@ body::before {
 .card button:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    background-color: #218838;
 }
 
 .card button:hover::before {
@@ -289,17 +285,4 @@ body::before {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-.card button:hover {
-    background-color: #218838;
-}
-
-/* title section */
-.title{
-    text-align: center;
-    background-color:#62F055;
-    margin-left: 25%;
-    margin-right: 25%;
-    border-radius: 5px;
 }
